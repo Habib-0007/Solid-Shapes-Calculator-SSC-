@@ -1,0 +1,619 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Google sans", "sans serif";
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+::selection {
+    color: #fff;
+    background-color: #ff5722;
+}
+
+:root { 
+  /*  --pink: #FF69B4;*/
+    --pink: #ff5722;
+    --white: #fefcff;
+}
+
+header {
+    height: 50px;
+    background: var(--pink);
+    color: var(--white);
+ }
+ 
+ header #menu {
+     padding: 15px;
+     display: inline-block;
+     font-size: 20px;
+ }
+ 
+ header h4 {
+     display: inline-block;
+     font-size: 20px;
+     padding-left: 100px;
+ }
+
+ #cube, #cuboid, #cone, #cylinder, #sphere {
+     border-radius: 10px;
+ }
+/* Cube */
+
+#cube {
+    border-right: 2px solid var(--pink);
+    border-top: 2px solid var(--pink);
+    border-bottom: 2px solid var(--pink);
+    margin: 10px;
+}
+
+#cube h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.values {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#cube h5+label {
+    text-align: center;
+    display: inline;
+}
+
+#cube #cubeLength {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cube #cubeLength:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+.cubeunit {
+    text-align: center;
+}
+
+#cube .cubeunit #cubeUnit {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cube .cubeunit #cubeUnit:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cube .options1, #cube .options2 {
+    text-align: center;
+    padding: 6px;
+}
+
+#cube input[type="radio"] {
+    border: 1px solid var(--pink);
+    border-radius: 50%;
+    accent-color: var(--pink);
+}
+
+#cube button {
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--pink);
+    text-align: center;
+    border: 1px solid var(--pink);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#cube button:focus {
+    color: #fff;
+    background: var(--pink);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#cube p {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/* Cuboid */
+
+#cuboid {
+    border-left: 2px solid var(--pink);
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid var(--pink);
+    margin: 10px;
+}
+
+#cuboid h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.values {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#cuboid h5+label {
+    text-align: center;
+    display: inline;
+}
+
+#cuboid #cuboidLength {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cuboid #cuboidLength:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cuboid #cuboidBreadth {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cuboid #cuboidBreadth:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cuboid #cuboidHeight {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cuboid #cuboidHeight:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+.cuboidunit {
+    text-align: center;
+}
+
+#cuboid .cuboidunit #cuboidUnit {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cuboid .cuboidunit #cuboidUnit:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cuboid .options1, #cuboid .options2 {
+    text-align: center;
+    padding: 6px;
+}
+
+#cuboid input[type="radio"] {
+    border: 1px solid var(--pink);
+    border-radius: 50%;
+    accent-color: var(--pink);
+}
+
+#cuboid button {
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--pink);
+    text-align: center;
+    border: 1px solid var(--pink);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#cuboid button:focus {
+    color: #fff;
+    background: var(--pink);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#cuboid p {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/* Cone */
+
+#cone {
+    border-right: 2px solid var(--pink);
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid var(--pink);
+    margin: 10px;
+}
+
+#cone h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.values {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#cone h5+label {
+    text-align: center;
+    display: inline;
+}
+
+#cone #coneRadius {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cone #coneRadius:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cone #coneHeight {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cone #coneHeight:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cone #coneSlantHeight {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cone #coneSlantHeight:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+.coneunit {
+    text-align: center;
+}
+
+#cone .coneunit #coneUnit {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cone .coneunit #coneUnit:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cone .options1, #cone .options2 {
+    text-align: center;
+    padding: 6px;
+}
+
+#cone input[type="radio"] {
+    border: 1px solid var(--pink);
+    border-radius: 50%;
+    accent-color: var(--pink);
+}
+
+#cone button {
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--pink);
+    text-align: center;
+    border: 1px solid var(--pink);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#cone button:focus {
+    color: #fff;
+    background: var(--pink);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#cone p {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+
+/* Cylinder */
+
+#cylinder {
+    border-left: 2px solid var(--pink);
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid var(--pink);
+    margin: 10px;
+}
+
+#cylinder h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.values {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#cylinder h5+label {
+    text-align: center;
+    display: inline;
+}
+
+#cylinder #cylinderRadius {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cylinder #cylinderRadius:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cylinder #cylinderHeight {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cylinder #cylinderHeight:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+.cylinderunit {
+    text-align: center;
+}
+
+#cylinder .cylinderunit #cylinderUnit {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#cylinder .cylinderunit #cylinderUnit:hover {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#cylinder .options1, #cylinder .options2 {
+    text-align: center;
+    padding: 6px;
+}
+
+#cylinder input[type="radio"] {
+    border: 1px solid var(--pink);
+    border-radius: 50%;
+    accent-color: var(--pink);
+}
+
+#cylinder button {
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--pink);
+    text-align: center;
+    border: 1px solid var(--pink);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#cylinder button:focus {
+    color: #fff;
+    background: var(--pink);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#cylinder p {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/* Sphere */
+
+#sphere {
+    border-right: 2px solid var(--pink);
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid var(--pink);
+    margin: 10px;
+}
+
+#sphere h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.values {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#sphere h5+label {
+    text-align: center;
+    display: inline;
+}
+
+#sphere #sphereRadius {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#sphere #sphereRadius:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#sphere #sphereHeight {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#sphere #sphereHeight:focus {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+.sphereunit {
+    text-align: center;
+}
+
+#sphere .sphereunit #sphereUnit {
+    border: 0.5px solid #000;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#sphere .sphereunit #sphereUnit:hover {
+    outline: 2px solid var(--pink);
+    border: none;
+}
+
+#sphere .options1, #sphere .options2 {
+    text-align: center;
+    padding: 6px;
+}
+
+#sphere input[type="radio"] {
+    border: 1px solid var(--pink);
+    border-radius: 50%;
+    accent-color: var(--pink);
+}
+
+#sphere button {
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--pink);
+    text-align: center;
+    border: 1px solid var(--pink);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#sphere button:focus {
+    color: #fff;
+    background: var(--pink);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#sphere p {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}

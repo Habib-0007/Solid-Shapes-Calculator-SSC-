@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Solid Shapes Calculator </title>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Google Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#ff5722"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <i class="fa fa-bars" id="menu"></i>
+        <h4> Xolve </h4>
+    </header>
+    
+    <main>
+        <section id="cube">
+            <h5> Cube </h5>
+            <div class="values">
+            <label> Cube length : </label>
+            <input type="number" name="cube length" id="cubeLength">
+            </div>
+            <div class="cubeunit">
+               <label> Unit : </label> <input type="text" name="cubeunit" id="cubeUnit">
+            </div>
+            <div class="options1">
+            <input type="radio" name="cubeoption" id="getCubeArea">
+            <label for="getCubeArea"> Surface Area </label>
+            </div>
+            
+            <div class="options2">
+            <input type="radio" name="cubeoption" id="getCubeVolume">
+            <label for="getCubeVolume"> Volume </label>
+            </div>
+            
+            
+            <button id="getCubeResult"> Get Area </button>
+            <p id="cubeResult">  </p>
+        </section>
+        
+        
+           <section id="cuboid">
+            <h5> Cuboid </h5>
+            <div class="values">
+            <label> Cuboid length : </label>
+            <input type="number" name="cuboid length" id="cuboidLength">
+            <br>
+            <label> Cuboid breadth : </label>
+            <input type="number" name="cuboid breadth" id="cuboidBreadth">
+            <br>
+            <label> Cuboid height : </label>
+            <input type="number" name="cuboid height" id="cuboidHeight">
+            </div>
+            <div class="cuboidunit">
+               <label> Unit : </label> <input type="text" name="unit" id="cuboidUnit">
+            </div>
+            <div class="options1">
+            <input type="radio" name="cuboidoption" id="getCuboidArea">
+            <label for="getCuboidArea"> Surface Area </label>
+            </div>
+            
+            <div class="options2">
+            <input type="radio" name="cuboidoption" id="getCuboidVolume">
+            <label for="getCuboidVolume"> Volume </label>
+            </div>
+            
+            
+            <button id="getCuboidResult"> Get Area </button>
+            <p id="cuboidResult">  </p>
+         
+        </section>
+        
+        <section id="cone">
+            <h5> Cone </h5>
+            <div class="values">
+            <label> Cone radius : </label>
+            <input type="number" name="cone radius" id="coneRadius">
+            <br>
+            <label> Cone height : </label>
+            <input type="number" name="cone height" id="coneHeight">
+            <br>
+            <label> Cone slant height : </label>
+            <input type="number" name="conr slant height" id="coneSlantHeight">
+            </div>
+            <div class="coneunit">
+               <label> Unit : </label> <input type="text" name="unit" id="coneUnit">
+            </div>
+            <div class="options1">
+            <input type="radio" name="coneoption" id="getConeArea">
+            <label for="getConeArea"> Surface Area </label>
+            </div>
+            
+            <div class="options2">
+            <input type="radio" name="coneoption" id="getConeVolume">
+            <label for="getConeVolume"> Volume </label>
+            </div>
+            
+            
+            <button id="getConeResult"> Get Area </button>
+            <p id="coneResult">  </p>
+         
+        </section>
+        
+        <section id="cylinder">
+            <h5> Cylinder </h5>
+            <div class="values">
+            <label> Cylinder radius : </label>
+            <input type="number" name="cylinder radius" id="cylinderRadius">
+            <br>
+            <label> Cylinder height : </label>
+            <input type="number" name="cylinder height" id="cylinderHeight">
+            </div>
+            <div class="cylinderunit">
+               <label> Unit : </label> <input type="text" name="unit" id="cylinderUnit">
+            </div>
+            <div class="options1">
+            <input type="radio" name="cylinderoption" id="getCylinderArea">
+            <label for="getCylinderArea"> Surface Area </label>
+            </div>
+            
+            <div class="options2">
+            <input type="radio" name="cylinderoption" id="getCylinderVolume">
+            <label for="getCylinderVolume"> Volume </label>
+            </div>
+            
+            
+            <button id="getCylinderResult"> Get Area </button>
+            <p id="cylinderResult">  </p>
+         
+        </section>
+        
+        
+        <section id="sphere">
+            <h5> Sphere </h5>
+            <div class="values">
+            <label> Sphere radius : </label>
+            <input type="number" name="sphere radius" id="sphereRadius">
+            </div>
+            <div class="sphereunit">
+               <label> Unit : </label> <input type="text" name="unit" id="sphereUnit">
+            </div>
+            <div class="options1">
+            <input type="radio" name="sphereoption" id="getSphereArea">
+            <label for="getSphereArea"> Surface Area </label>
+            </div>
+            
+            <div class="options2">
+            <input type="radio" name="sphereoption" id="getSphereVolume">
+            <label for="getSphereVolume"> Volume </label>
+            </div>
+            
+            
+            <button id="getSphereResult"> Get Area </button>
+            <p id="sphereResult">  </p>
+         
+        </section>
+      </main>
+    <script src="index.js"></script>
+</body>
+</html>
